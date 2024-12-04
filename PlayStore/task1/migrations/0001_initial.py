@@ -30,6 +30,6 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
                 ('age_limited', models.BooleanField(default=False)),
                 ('buyers', models.ManyToManyField(related_name='games', to='task1.buyer')),
-            ],
+            ],clear
         ),
     ]
