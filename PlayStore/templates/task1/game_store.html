@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends "menu.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>  </title>
+</head>
+<body>
+    {% block page_name %}
+        {{block.super}}
+    {% endblock %}
+
+    {% block menu %}
+    <br>
+        <h1 align="center">{{ text }}</h1>
+        {{block.super}}
+    {% endblock %}
+
+    {% block content %}
+     <ul>
+         {% for i in games %}
+             <li>{{ i.title }} | {{ i.description }}. Цена: {{ i.cost }}
+                 <button>{{ pay }}</button>
+             </li>
+         {% endfor %}
+     </ul>
+     <a href="http://127.0.0.1:8000"> <h2><button> Вернуться обратно </button></h2> </a>
+    {% endblock %}
+</body>
+</html>
