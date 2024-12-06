@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c862ce86-629e-4885-8110-710f35d8d720" name="Changes" comment="05/12-02" />
+    <list default="true" id="c862ce86-629e-4885-8110-710f35d8d720" name="Changes" comment="05/12-03">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayStore/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/PlayStore/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayStore/task1/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlayStore/task1/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayStore/task1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlayStore/task1/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +24,12 @@
     &quot;assignee&quot;: &quot;SvetlanaDmitrieva&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SvetlanaDmitrieva/Module_19_02.git&quot;,
-    &quot;accountId&quot;: &quot;511d6f8a-e22d-4804-8115-4c38ab9f45d0&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SvetlanaDmitrieva/Module_19_03.git",
+    "accountId": "511d6f8a-e22d-4804-8115-4c38ab9f45d0"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -131,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733402921136</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="05/12-03">
+      <option name="closed" value="true" />
+      <created>1733403141181</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733403141181</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +165,7 @@
     <MESSAGE value="03/12-02" />
     <MESSAGE value="05/12-01" />
     <MESSAGE value="05/12-02" />
-    <option name="LAST_COMMIT_MESSAGE" value="05/12-02" />
+    <MESSAGE value="05/12-03" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/12-03" />
   </component>
 </project>
