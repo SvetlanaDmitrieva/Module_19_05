@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from django.http import HttpResponse
 from .forms import UserRegister
 from django.db import models
@@ -17,7 +18,6 @@ def main_page(request):
 
 def game_store_page(request):
     title = 'Игры'
-    # games = ["Atomic Heart", "Cyberpunk 2077", 'PayDay 2']
     games = Game.objects.values()
     pay = 'Купить'
     context = {
@@ -38,8 +38,15 @@ def cart_page(request):
     return render(request, 'cart.html', context)
 
 
+def news_page(request):
+    news = Post.objects.filter(is_published= True).order_by('-created_at')
+    paginator = Paginator(news, 3)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'news.html', {'news': page_obj})
+
+
 def sign_up_by_html(request):
-    # users = ['Victor', 'John', 'Irina']
     users = Buyer.objects.values_list('name', flat=True)
     info = {}
     if request.method == 'POST':
@@ -73,7 +80,6 @@ def sign_up_by_html(request):
 
 
 def sign_up_by_django(request):
-    # users = ['Victor', 'John', 'Irina']
     users = Buyer.objects.values_list('name', flat=True)
     info = {}
     message = ''

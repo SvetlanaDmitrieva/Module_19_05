@@ -29,7 +29,7 @@ class Game(models.Model):
 
 class Post(models.Model):
     objects = None
-    title = models.CharField(max_length=255, verbose_name= 'Заголовок')
+    title = models.CharField(max_length=55, verbose_name= 'Заголовок')
     content = models.TextField(verbose_name='Содержание')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата обновления')
